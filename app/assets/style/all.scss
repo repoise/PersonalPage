@@ -1,23 +1,233 @@
-$color: #00cc99;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+list, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, list, nav, section {
+    display: block;
 }
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+// *{
+//   outline: 1px solid black;
+// }
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.header{
+  background-size: cover;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;  
+  background-position: center;
+}
+.name{
+  width: 304px;
+  margin: 0 auto;
+  color: #fff;
+  font-style: italic;
+}
+h1{
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 900;
+}
+p{
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+ul{
+  list-style: none;
+}
+.name ul{
   display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
+  justify-content: space-evenly;
+}
+.about{
+  width: 412px;
+  margin: 0 auto;
+  text-align: center;
+}
+h4{
+  font-size: 24px;
+  line-height: 36px;
+  font-style: italic;
+  font-weight: 700;
+}
+h2{
+  font-size: 64px;
+  line-height: 84px;
+  font-style: italic;
+}
+img{
+  display: block;
+}
+.about img{
+  margin: 0 auto;
+}
+h3{
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+  font-style: italic;
+}
+.about p{
+  
+}
+.about ul{
+  width: 384px;
+  margin: 0 auto;
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 24px;
+  line-height: 42px;
+  border-top: 1px solid #000;
+}
+.brand{
+  background-color: #000;
+  color: #fff;
+}
+.brand-container{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.brand-container h3{
+  font-weight: 500;
+  font-style: italic;
+}
+.brand-container p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  font-style: normal;
+}
+.work-container{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.work-container p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  font-style: italic;
+}
+.work-container img{
+  margin-bottom: 16px;
+}
+.img-col-1{
+  display: flex;
+  justify-content: center;
+}
+.img-col-2{
+  display: flex;
+  justify-content: space-between;
+}
+.img-col-3{
+  display: flex;
+  justify-content: space-between;
+}
+.footer{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+.pt28{
+  padding-top: 28px;
+}
+.pt56{
+  padding-top: 56px;
+}
+.pt64{
+  padding-top: 64px;
+}
+.pt308{
+  padding-top: 308px;
+}
+.pb24{
+  padding-bottom: 24px;
+}
+.pb64{
+  padding-bottom: 64px;
+}
+.pb160{
+  padding-bottom: 160px;
+}
+.pb308{
+  padding-bottom: 308px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mb8{
+  margin-bottom: 8px;
+}
+.mb12{
+  margin-bottom: 12px;
+}
+.mb16{
+  margin-bottom: 16px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.mb24{
+  margin-bottom: 24px;
+}
+.mb28{
+  margin-bottom: 28px;
+}
+.mb32{
+  margin-bottom: 32px;
+}
+.mb40{
+  margin-bottom: 40px;
+}
+.mb48{
+  margin-bottom: 48px;
+}
+.mb56{
+  margin-bottom: 56px;
+}
+.mb68{
+  margin-bottom: 68px;
+}
+.mb144{
+  margin-bottom: 144px;
 }
