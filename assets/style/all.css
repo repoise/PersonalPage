@@ -38,7 +38,7 @@ body {
   background-size: cover;
   background-image: url(../images/banner.png);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center center; }
 
 .name {
   width: 304px;
@@ -99,11 +99,30 @@ h3 {
 .about ul {
   width: 384px;
   margin: 0 auto;
-  list-style: disc;
-  list-style-position: inside;
   font-size: 24px;
+  font-style: italic;
   line-height: 42px;
   border-top: 1px solid #000; }
+
+.about li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.about li::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  border-radius: 50%;
+  display: block;
+  margin-right: 16px; }
 
 .brand {
   background-color: #000;
